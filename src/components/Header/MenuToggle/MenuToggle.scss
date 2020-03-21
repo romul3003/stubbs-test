@@ -1,0 +1,38 @@
+.menu-toggle-btn {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	padding: 5px 0;
+	background-color: transparent;
+	overflow: hidden;
+
+	&__bar {
+		display: block;
+		width: 26px;
+		height: 2px;
+		background-color: #3E3E3E;
+		transition: 0.4s;
+
+		&--middle {
+			margin: 5px 0;
+		}
+	}
+
+	&.change {
+		.menu-toggle-btn__bar {
+			&--top {
+				transform: rotate(-45deg) translate(-5px, 5px);
+			}
+
+			&--middle {
+				opacity: 0;
+			}
+
+			&--bottom {
+				transform: rotate(45deg) translate(-5px, -5px);
+			}
+		}
+	}
+}
