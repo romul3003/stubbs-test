@@ -1,5 +1,7 @@
 .logo {
+	position: relative;
 	flex: 1 0 80px;
+	z-index: 3;
 
 	img {
 		vertical-align: top;

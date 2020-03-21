@@ -10,8 +10,9 @@ const Header = () => {
 
 	return (
 		<header className="header">
+			<div className="header__layer" />
 			<Logo />
-			<Navigation />
+			<Navigation menuIsActive={menuIsActive} />
 			<Search />
 			<MenuToggle menuIsActive={menuIsActive} setMenu={setMenu} />
 		</header>

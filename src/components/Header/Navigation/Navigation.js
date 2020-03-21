@@ -1,36 +1,37 @@
 import React from 'react'
 import './Navigation.scss'
 import Localization from '../../common/Localization/Localization'
+import { NavLink } from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = ({ menuIsActive }) => {
 	return (
-		<nav className="nav">
+		<nav className={`nav ${menuIsActive ? 'active' : ''}`.trim()}>
 			<ul className="nav__menu">
-				<li className="nav__menu-item active">
-					<a href="/" className="nav__menu-link">
+				<li className="nav__menu-item">
+					<NavLink to="/" className="nav__menu-link" exact>
 						Главная
-					</a>
+					</NavLink>
 					<Localization />
 				</li>
 				<li className="nav__menu-item nav__menu-item--has-children">
-					<a href="/services" className="nav__menu-link">
+					<NavLink to="/services" className="nav__menu-link">
 						Услуги
-					</a>
+					</NavLink>
 				</li>
 				<li className="nav__menu-item">
-					<a href="/our-works" className="nav__menu-link">
+					<NavLink to="/our-works" className="nav__menu-link">
 						Наши работы
-					</a>
+					</NavLink>
 				</li>
 				<li className="nav__menu-item">
-					<a href="about-us" className="nav__menu-link">
+					<NavLink to="about-us" className="nav__menu-link">
 						О нас
-					</a>
+					</NavLink>
 				</li>
 				<li className="nav__menu-item">
-					<a href="/contacts" className="nav__menu-link">
+					<NavLink to="/contacts" className="nav__menu-link">
 						Контакты
-					</a>
+					</NavLink>
 				</li>
 			</ul>
 		</nav>

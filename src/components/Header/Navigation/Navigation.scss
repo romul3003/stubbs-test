@@ -1,11 +1,18 @@
 .nav {
 	position: absolute;
-	min-height: 580px;
-	top: 100%;
+	height: 580px;
+	top: -580px;
 	left: 0;
 	right: 0;
 	padding: 0 16px;
 	background-image: linear-gradient(180deg, #49494A 17.19%, #383836 100%);
+	transition: bottom .4s ease, top .4s ease;
+	z-index: 1;
+
+	&.active {
+		top: 100%;
+		//bottom: -580px;
+	}
 
 	&__menu {
 		list-style: none;
@@ -23,12 +30,6 @@
 
 			.nav__menu-link {
 				padding: 15px 0;
-			}
-		}
-
-		&.active {
-			.nav__menu-link {
-				color: #AEAEAE;
 			}
 		}
 
@@ -56,5 +57,9 @@
 		line-height: 21px;
 		color: #fff;
 		letter-spacing: 0.2px;
+
+		&.active {
+			color: #AEAEAE;
+		}
 	}
 }
