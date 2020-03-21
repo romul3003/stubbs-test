@@ -1,16 +1,18 @@
 import React from 'react'
 import './Navigation.scss'
+import Localization from '../../common/Localization/Localization'
 
 const Navigation = () => {
 	return (
 		<nav className="nav">
 			<ul className="nav__menu">
-				<li className="nav__menu-item">
+				<li className="nav__menu-item active">
 					<a href="/" className="nav__menu-link">
 						Главная
 					</a>
+					<Localization />
 				</li>
-				<li className="nav__menu-item">
+				<li className="nav__menu-item nav__menu-item--has-children">
 					<a href="/services" className="nav__menu-link">
 						Услуги
 					</a>

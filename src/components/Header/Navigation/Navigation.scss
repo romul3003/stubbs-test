@@ -15,14 +15,41 @@
 
 	&__menu-item {
 		border-bottom: 1px solid rgba(228, 181, 107, 0.5);
+
 		&:first-child {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
 			.nav__menu-link {
 				padding: 15px 0;
+			}
+		}
+
+		&.active {
+			.nav__menu-link {
+				color: #AEAEAE;
+			}
+		}
+
+		&--has-children {
+			.nav__menu-link {
+				&::after {
+					content: '';
+					position: absolute;
+					width: 11px;
+					height: 21px;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					background-image: url("../../../assets/img/icons/arrow-bottom.svg");
+				}
 			}
 		}
 	}
 
 	&__menu-link {
+		position: relative;
 		display: block;
 		padding: 20px 0;
 		font-size: 18px;
