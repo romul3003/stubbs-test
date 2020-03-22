@@ -1,10 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import './Carousel.scss'
-
-import img1 from '../../assets/img/slider/slide1-desktop.png'
-import img1_2x from '../../assets/img/slider/slide1-desktop@2x.png'
-import img1_3x from '../../assets/img/slider/slide1-desktop@3x.png'
+import { sliderData } from '../../mockData/mockData'
 
 const Carousel = () => {
 	const settings = {
@@ -16,38 +13,23 @@ const Carousel = () => {
 		slidesToScroll: 1,
 	}
 
+	const rednderSlides = () =>
+		sliderData.map(slide => (
+			<div className="carousel__slide" key={slide.id}>
+				<picture className="carousel__wrap">
+					<source srcSet={`${slide.retina_2x_src} 2x`} type="image/png" />
+					<source srcSet={`${slide.retina_3x_src} 3x`} type="image/png" />
+					<img src={slide.src} alt={slide.alt} className="carousel__img" />
+				</picture>
+				<div className="carousel__text-layer">
+					<div className="carousel__text">{slide.text}</div>
+				</div>
+			</div>
+		))
+
 	return (
 		<div className="carousel">
-			<Slider {...settings}>
-				<div className="carousel__item">
-					<picture className="carousel__wrap">
-						<source srcSet={`${img1_2x} 2x`} />
-						<source srcSet={`${img1_3x} 3x`} />
-						<img src={img1} alt="slide" className="carousel__img" />
-					</picture>
-				</div>
-				<div className="carousel__item">
-					<picture className="carousel__wrap">
-						<source srcSet={`${img1_2x} 2x`} />
-						<source srcSet={`${img1_3x} 3x`} />
-						<img src={img1} alt="slide" className="carousel__img" />
-					</picture>
-				</div>
-				<div className="carousel__item">
-					<picture className="carousel__wrap">
-						<source srcSet={`${img1_2x} 2x`} />
-						<source srcSet={`${img1_3x} 3x`} />
-						<img src={img1} alt="slide" className="carousel__img" />
-					</picture>
-				</div>
-				<div className="carousel__item">
-					<picture className="carousel__wrap">
-						<source srcSet={`${img1_2x} 2x`} />
-						<source srcSet={`${img1_3x} 3x`} />
-						<img src={img1} alt="slide" className="carousel__img" />
-					</picture>
-				</div>
-			</Slider>
+			<Slider {...settings}>{rednderSlides()}</Slider>
 		</div>
 	)
 }

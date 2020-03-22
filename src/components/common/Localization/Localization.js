@@ -1,14 +1,6 @@
 import React from 'react'
 import './Localization.scss'
-import ru from '../../../assets/img/icons/flag-ru.svg'
-import ukr from '../../../assets/img/icons/flag-ukr.svg'
-import en from '../../../assets/img/icons/flag-en.png'
-
-const languagesList = [
-	{ id: 'ru', src: ru, label: 'russian icon', active: true },
-	{ id: 'ukr', src: ukr, label: 'ukrainian icon', active: false },
-	{ id: 'en', src: en, label: 'english icon', active: false },
-]
+import { languagesList } from '../../../mockData/mockData'
 
 const Localization = () => {
 	const languages = () =>

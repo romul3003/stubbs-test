@@ -2,13 +2,14 @@
 //@import "~slick-carousel/slick/slick-theme.css";
 
 .carousel {
-	&__item {
+	&__slide {
+		position: relative;
 		vertical-align: top;
 	}
 
 	&__wrap {
-		display: block;
 		position: relative;
+		display: block;
 		overflow: hidden;
 		min-height: 216px;
 
@@ -37,7 +38,34 @@
 			position: absolute;
 			height: 100%;
 		}
+	}
 
+	&__text-layer {
+		position: absolute;
+		top:50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 252px;
+		padding: 30px 15px 30px 16px;
+		background-color: rgba(62, 62, 62, 0.9);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top:50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 83%;
+			height: 1px;
+			background-color: rgba(228, 181, 107, 0.8);
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 25px;
+		color: #fff;
+		letter-spacing: 0.15px;
 	}
 
 	.slick-dots {
