@@ -4,6 +4,10 @@
 	margin: 0 13px 0 16px;
 	z-index: 3;
 
+	@media (min-width: 1200px) {
+		flex: 1 1 auto;
+	}
+
 	&__field {
 		display: block;
 		width: 52px;

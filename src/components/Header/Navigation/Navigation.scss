@@ -10,25 +10,75 @@
 	transition: bottom .4s ease, top .4s ease;
 	z-index: 1;
 
+	@media (min-width: 1200px) {
+		position: static;
+		height: auto;
+		flex: 1 1 50%;
+		background-image: none;
+		overflow: initial;
+	}
+
 	&.active {
 		top: 100%;
-		//bottom: -580px;
+
+		@media (min-width: 1200px) {
+			top: auto;
+		}
 	}
 
 	&__menu {
 		margin: 0;
+
+		@media (min-width: 1200px) {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
 	&__menu-item {
+		position: relative;
 		border-bottom: 1px solid rgba(228, 181, 107, 0.5);
+
+		@media (min-width: 1200px) {
+			flex: 1 0 auto;
+			text-align: center;
+			border-bottom: none;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 1px;
+				height: 200px;
+				background-color: rgba(62, 62, 62, 0.22);
+
+			}
+		}
 
 		&:first-child {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 
+			@media (min-width: 1200px) {
+				display: list-item;
+			}
+
 			.nav__menu-link {
 				padding: 15px 0;
+
+				@media (min-width: 1200px) {
+					padding: 7px 0;
+				}
+			}
+		}
+
+		&:last-child {
+			@media (min-width: 1200px) {
+				&::after {
+					display: none;
+				}
 			}
 		}
 
@@ -43,6 +93,16 @@
 					top: 50%;
 					transform: translateY(-50%);
 					background-image: url("../../../assets/img/icons/arrow-bottom.svg");
+
+					@media (min-width: 1200px) {
+						position: relative;
+						display: inline-block;
+						width: 14px;
+						height: 8px;
+						margin-left: 10px;
+						transform: translateY(0);
+						background-image: url("../../../assets/img/icons/arrow-bottom-yellow.svg");
+					}
 				}
 			}
 		}
@@ -57,8 +117,34 @@
 		color: #fff;
 		letter-spacing: 0.2px;
 
+		@media (min-width: 1200px) {
+			color: #3E3E3E;
+			padding: 7px 0;
+		}
+
 		&.active {
 			color: #AEAEAE;
+
+			@media (min-width: 1200px) {
+				color: #3E3E3E;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					transform: translateX(-50%);
+					width: 66px;
+					height: 2px;
+					background-color: #E4B56B;
+				}
+			}
+		}
+	}
+
+	.localization {
+		@media (min-width: 1200px) {
+			display: none;
 		}
 	}
 }

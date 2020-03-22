@@ -1,14 +1,12 @@
 import React from 'react'
 import './Logo.scss'
-import logo2x from '../../../assets/img/logo/logo@2x.png'
-import logo3x from '../../../assets/img/logo/logo@3x.png'
 import logo from '../../../assets/img/logo/logo.png'
+import logo1360 from '../../../assets/img/logo/logo1360.png'
 
 const Logo = () => {
 	return (
 		<picture className="logo">
-			<source srcSet={`${logo2x} 2x`} type="image/png" />
-			<source srcSet={`${logo3x} 3x`} type="image/png" />
+			<source srcSet={`${logo1360} 1x`} type="image/png" media="(min-width:1200px)" />
 			<img src={logo} alt="logo" />
 		</picture>
 	)

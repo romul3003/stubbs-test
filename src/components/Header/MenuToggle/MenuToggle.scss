@@ -10,6 +10,10 @@
 	overflow: hidden;
 	z-index: 3;
 
+	@media (min-width: 1200px) {
+		display: none;
+	}
+
 	&__bar {
 		display: block;
 		width: 26px;
