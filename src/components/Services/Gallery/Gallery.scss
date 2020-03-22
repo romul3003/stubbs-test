@@ -12,6 +12,11 @@
 	&__item-wrap {
 		position: relative;
 	}
+
+	&__link {
+		position: relative;
+		display: block;
+	}
 	
 	&__item-title {
 		position: absolute;

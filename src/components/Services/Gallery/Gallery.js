@@ -7,7 +7,7 @@ const Gallery = () => {
 		<ul className="gallery">
 			{gallery.map(item => (
 				<li className="gallery__item" key={item.id}>
-					<div className="gallery__item-wrap">
+					<a href="/" className="gallery__link">
 						<picture className="gallery__img-wrap">
 							<source
 								srcSet={`${item.src_360} 1x`}
@@ -29,8 +29,8 @@ const Gallery = () => {
 
 							<img src={item.src} alt={item.title} className="gallery__img" />
 						</picture>
-						<div className="gallery__item-title">{item.title}</div>
-					</div>
+						<span className="gallery__item-title">{item.title}</span>
+					</a>
 				</li>
 			))}
 		</ul>
