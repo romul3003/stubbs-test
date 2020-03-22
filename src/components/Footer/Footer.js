@@ -12,28 +12,26 @@ const Footer = () => {
 				<div className="footer__col-left">
 					<div className="footer__about-company">
 						<h3 className="footer__title">О компании</h3>
-						<ul>
-							<li>
-								<a href="/" className="footer__link">
-									Наши работы
-								</a>
-							</li>
-							<li>
-								<a href="/" className="footer__link">
-									Контакты
-								</a>
-							</li>
-							<li>
-								<a href="/" className="footer__link">
-									Доставка
-								</a>
-							</li>
-							<li>
-								<a href="/" className="footer__link">
-									Форма заказа
-								</a>
-							</li>
-						</ul>
+						<div>
+							<a href="/" className="footer__link">
+								Наши работы
+							</a>
+						</div>
+						<div>
+							<a href="/" className="footer__link">
+								Контакты
+							</a>
+						</div>
+						<div>
+							<a href="/" className="footer__link">
+								Доставка
+							</a>
+						</div>
+						<div>
+							<a href="/" className="footer__link">
+								Форма заказа
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className="footer__col-central">

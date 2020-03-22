@@ -1,5 +1,5 @@
 .footer {
-	padding: 19px 16px 16px;
+	padding: 0 16px 16px;
 	background-color: #fff;
 
 	&__row {
@@ -8,9 +8,15 @@
 		margin: 0 -10px;
 
 		& > div {
-			margin-bottom: 17px;
-			&:last-child {
-				margin-bottom: 0;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				height: 55px;
+				width: 1px;
+				background-color: #E4B56B;
+				top: 0;
+				right: 0;
 			}
 		}
 	}
@@ -32,8 +38,9 @@
 	}
 
 	&__title {
-		margin-top: 0;
-		margin-bottom: 20px;
+		margin: 0;
+		padding-top: 19px;
+		padding-bottom: 20px;
 		font-size: 16px;
 		line-height: 19px;
 		color: #3E3E3E;
