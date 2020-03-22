@@ -1,3 +1,4 @@
+## Only mobile version is ready for now
 ### `gh-pages:` https://romul3003.github.io/stubbs-test/
 
 ## Available Scripts
