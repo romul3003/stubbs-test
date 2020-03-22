@@ -1,6 +1,6 @@
 import React from 'react'
 import './Services.scss'
-import Gallery from '../Gallery/Gallery'
+import Gallery from './Gallery/Gallery'
 
 const Services = () => {
 	return (

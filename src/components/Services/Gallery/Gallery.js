@@ -1,6 +1,6 @@
 import React from 'react'
 import './Gallery.scss'
-import { gallery } from '../../mockData/mockData'
+import { gallery } from '../../../mockData/mockData'
 
 const Gallery = () => {
 	return (
