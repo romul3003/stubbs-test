@@ -1,0 +1,23 @@
+.services {
+	margin: 21px auto;
+	padding: 0 16px;
+
+	&__title {
+		margin: 0 auto 21px;
+	}
+
+	&__cost-btn {
+		width: 100%;
+		margin: 10px auto;
+		border: none;
+		padding: 10px;
+		background-color: #454647;
+		color: #fff;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		letter-spacing: .25px;
+	}
+}

@@ -17,8 +17,23 @@ const Carousel = () => {
 		sliderData.map(slide => (
 			<div className="carousel__slide" key={slide.id}>
 				<picture className="carousel__wrap">
+					<source
+						srcSet={`${slide.src_360} 1x`}
+						type="image/png"
+						media="(max-width:360px)"
+					/>
 					<source srcSet={`${slide.retina_2x_src} 2x`} type="image/png" />
+					<source
+						srcSet={`${slide.retina_2x_src_360} 2x`}
+						type="image/png"
+						media="(max-width:360px)"
+					/>
 					<source srcSet={`${slide.retina_3x_src} 3x`} type="image/png" />
+					<source
+						srcSet={`${slide.retina_3x_src_360} 3x`}
+						type="image/png"
+						media="(max-width:360px)"
+					/>
 					<img src={slide.src} alt={slide.alt} className="carousel__img" />
 				</picture>
 				<div className="carousel__text-layer">

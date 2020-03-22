@@ -25,3 +25,24 @@ img {
 a {
   text-decoration: none;
 }
+
+.title {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3E3E3E;
+  letter-spacing: -0.2px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #E4B56B;
+  }
+}
