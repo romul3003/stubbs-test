@@ -2,8 +2,11 @@ import React from 'react'
 import './Navigation.scss'
 import Localization from '../../common/Localization/Localization'
 import { NavLink } from 'react-router-dom'
+import { useMediaSize } from '../../../hooks/useMediaSize'
 
 const Navigation = ({ menuIsActive }) => {
+	const isMobile = useMediaSize()
+
 	return (
 		<nav className={`nav ${menuIsActive ? 'active' : ''}`.trim()}>
 			<ul className="nav__menu">
@@ -11,7 +14,7 @@ const Navigation = ({ menuIsActive }) => {
 					<NavLink to="/" className="nav__menu-link" exact>
 						Главная
 					</NavLink>
-					<Localization />
+					{isMobile && <Localization />}
 				</li>
 				<li className="nav__menu-item nav__menu-item--has-children">
 					<NavLink to="/services" className="nav__menu-link">

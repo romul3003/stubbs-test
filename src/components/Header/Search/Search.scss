@@ -3,9 +3,30 @@
 	flex: 1 1 100%;
 	margin: 0 13px 0 16px;
 	z-index: 3;
+	transition: all .2s;
 
 	@media (min-width: 1200px) {
-		flex: 1 1 auto;
+		//flex: 1 1 auto;
+		position: absolute;
+		top: calc(100% - 11px);
+		transform: translateY(-100%);
+		right: 0;
+		margin: 0;
+	}
+
+	&.visible {
+		@media (min-width: 1200px) {
+			//position: absolute;
+			transform: translateY(0);
+			top: 100%;
+			right: 0;
+		}
+
+		.search__field {
+			pointer-events: auto;
+			width: 100%;
+			opacity: 1;
+		}
 	}
 
 	&__field {
@@ -23,12 +44,6 @@
 		transition: width .4s ease-in, opacity .4s ease-in;
 		&::placeholder {
 			color: #C4C4C4;
-		}
-
-		&.visible {
-			pointer-events: auto;
-			width: 100%;
-			opacity: 1;
 		}
 	}
 

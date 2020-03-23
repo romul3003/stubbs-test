@@ -11,11 +11,21 @@
 	z-index: 1;
 
 	@media (min-width: 1200px) {
-		position: static;
+		//position: static;
+		//height: auto;
+		//flex: 1 1 50%;
+		//background-image: none;
+		//overflow: initial;
+
+		position: absolute;
+		width: 50%;
+		left: 50%;
+		transform: translateX(-50%);
 		height: auto;
-		flex: 1 1 50%;
 		background-image: none;
-		overflow: initial;
+		overflow: visible;
+		z-index: 3;
+		top: auto;
 	}
 
 	&.active {
@@ -142,9 +152,9 @@
 		}
 	}
 
-	.localization {
-		@media (min-width: 1200px) {
-			display: none;
-		}
-	}
+	//.localization {
+	//	@media (min-width: 1200px) {
+	//		display: none;
+	//	}
+	//}
 }
