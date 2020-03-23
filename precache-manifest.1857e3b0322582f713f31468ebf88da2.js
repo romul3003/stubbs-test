@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "048e13878204f2f3a4d88f7668f38940",
+    "revision": "14d3ba9c97927261dc4af7fd7fcc355c",
     "url": "/stubbs-test/index.html"
   },
   {
-    "revision": "7f9f5b97241230268287",
+    "revision": "1ac73067544a97286e18",
     "url": "/stubbs-test/static/css/2.4525321e.chunk.css"
   },
   {
-    "revision": "1bb73fd405c9883fa46c",
-    "url": "/stubbs-test/static/css/main.728d98f9.chunk.css"
+    "revision": "ee21ac6785575b731863",
+    "url": "/stubbs-test/static/css/main.98c8de8f.chunk.css"
   },
   {
-    "revision": "7f9f5b97241230268287",
-    "url": "/stubbs-test/static/js/2.c7757d6e.chunk.js"
+    "revision": "1ac73067544a97286e18",
+    "url": "/stubbs-test/static/js/2.8243296f.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/stubbs-test/static/js/2.c7757d6e.chunk.js.LICENSE.txt"
+    "url": "/stubbs-test/static/js/2.8243296f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bb73fd405c9883fa46c",
-    "url": "/stubbs-test/static/js/main.a9dc4dd6.chunk.js"
+    "revision": "ee21ac6785575b731863",
+    "url": "/stubbs-test/static/js/main.e9ca1d60.chunk.js"
   },
   {
     "revision": "76317bdc830ed63df542",

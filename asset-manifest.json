@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/stubbs-test/static/css/main.728d98f9.chunk.css",
-    "main.js": "/stubbs-test/static/js/main.a9dc4dd6.chunk.js",
-    "main.js.map": "/stubbs-test/static/js/main.a9dc4dd6.chunk.js.map",
+    "main.css": "/stubbs-test/static/css/main.98c8de8f.chunk.css",
+    "main.js": "/stubbs-test/static/js/main.e9ca1d60.chunk.js",
+    "main.js.map": "/stubbs-test/static/js/main.e9ca1d60.chunk.js.map",
     "runtime-main.js": "/stubbs-test/static/js/runtime-main.8ecfbd1c.js",
     "runtime-main.js.map": "/stubbs-test/static/js/runtime-main.8ecfbd1c.js.map",
     "static/css/2.4525321e.chunk.css": "/stubbs-test/static/css/2.4525321e.chunk.css",
-    "static/js/2.c7757d6e.chunk.js": "/stubbs-test/static/js/2.c7757d6e.chunk.js",
-    "static/js/2.c7757d6e.chunk.js.map": "/stubbs-test/static/js/2.c7757d6e.chunk.js.map",
+    "static/js/2.8243296f.chunk.js": "/stubbs-test/static/js/2.8243296f.chunk.js",
+    "static/js/2.8243296f.chunk.js.map": "/stubbs-test/static/js/2.8243296f.chunk.js.map",
     "index.html": "/stubbs-test/index.html",
-    "precache-manifest.1b492a70d8b54a84d010a9997e6b1aee.js": "/stubbs-test/precache-manifest.1b492a70d8b54a84d010a9997e6b1aee.js",
+    "precache-manifest.1857e3b0322582f713f31468ebf88da2.js": "/stubbs-test/precache-manifest.1857e3b0322582f713f31468ebf88da2.js",
     "service-worker.js": "/stubbs-test/service-worker.js",
     "static/css/2.4525321e.chunk.css.map": "/stubbs-test/static/css/2.4525321e.chunk.css.map",
-    "static/css/main.728d98f9.chunk.css.map": "/stubbs-test/static/css/main.728d98f9.chunk.css.map",
-    "static/js/2.c7757d6e.chunk.js.LICENSE.txt": "/stubbs-test/static/js/2.c7757d6e.chunk.js.LICENSE.txt",
+    "static/css/main.98c8de8f.chunk.css.map": "/stubbs-test/static/css/main.98c8de8f.chunk.css.map",
+    "static/js/2.8243296f.chunk.js.LICENSE.txt": "/stubbs-test/static/js/2.8243296f.chunk.js.LICENSE.txt",
     "static/media/OurCompany.scss": "/stubbs-test/static/media/2-360-min.89e75291.png",
     "static/media/index.scss": "/stubbs-test/static/media/Roboto-Regular.c007055b.woff",
     "static/media/Navigation.scss": "/stubbs-test/static/media/arrow-bottom.c925b815.svg",
@@ -81,8 +81,8 @@
   "entrypoints": [
     "static/js/runtime-main.8ecfbd1c.js",
     "static/css/2.4525321e.chunk.css",
-    "static/js/2.c7757d6e.chunk.js",
-    "static/css/main.728d98f9.chunk.css",
-    "static/js/main.a9dc4dd6.chunk.js"
+    "static/js/2.8243296f.chunk.js",
+    "static/css/main.98c8de8f.chunk.css",
+    "static/js/main.e9ca1d60.chunk.js"
   ]
 }
