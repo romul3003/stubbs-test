@@ -21,9 +21,9 @@
 	&.active {
 		top: 100%;
 
-		@media (min-width: 1200px) {
-			top: auto;
-		}
+		//@media (min-width: 1200px) {
+		//	top: auto;
+		//}
 	}
 
 	&__menu {
