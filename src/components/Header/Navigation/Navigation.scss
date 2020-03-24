@@ -11,29 +11,16 @@
 	z-index: 1;
 
 	@media (min-width: 1200px) {
-		//position: static;
-		//height: auto;
-		//flex: 1 1 50%;
-		//background-image: none;
-		//overflow: initial;
-
-		position: absolute;
-		width: 50%;
-		left: 50%;
-		transform: translateX(-50%);
+		position: static;
 		height: auto;
 		background-image: none;
 		overflow: visible;
-		z-index: 3;
 		top: auto;
+		margin: 0 auto;
 	}
 
 	&.active {
 		top: 100%;
-
-		//@media (min-width: 1200px) {
-		//	top: auto;
-		//}
 	}
 
 	&__menu {
@@ -79,7 +66,7 @@
 				padding: 15px 0;
 
 				@media (min-width: 1200px) {
-					padding: 7px 0;
+					padding: 9px 30px;
 				}
 			}
 		}
@@ -129,7 +116,7 @@
 
 		@media (min-width: 1200px) {
 			color: #3E3E3E;
-			padding: 7px 0;
+			padding: 9px 30px;
 		}
 
 		&.active {
@@ -151,10 +138,4 @@
 			}
 		}
 	}
-
-	//.localization {
-	//	@media (min-width: 1200px) {
-	//		display: none;
-	//	}
-	//}
 }

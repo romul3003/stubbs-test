@@ -5,6 +5,7 @@ import Search from './Search/Search'
 import Logo from './Logo/Logo'
 import Navigation from './Navigation/Navigation'
 import { useMediaSize } from '../../hooks/useMediaSize'
+import Localization from '../common/Localization/Localization'
 
 const Header = () => {
 	const [menuIsActive, setMenu] = useState(false)
@@ -20,8 +21,11 @@ const Header = () => {
 				<div className="header__layer" />
 				<Logo />
 				<Navigation menuIsActive={menuIsActive} />
-				<Search />
-				{isMobile && <MenuToggle menuIsActive={menuIsActive} setMenu={setMenu} />}
+				<div className="header__wrap">
+					<Search />
+					{isMobile && <MenuToggle menuIsActive={menuIsActive} setMenu={setMenu} />}
+					{!isMobile && <Localization />}
+				</div>
 			</div>
 		</header>
 	)

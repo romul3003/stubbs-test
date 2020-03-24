@@ -27,16 +27,18 @@ const Search = () => {
 			className={`search ${fieldVisibility ? 'visible' : ''}`.trim()}
 			onSubmit={submitHandler}
 		>
-			<input
-				type="text"
-				className="search__field"
-				placeholder="Поиск"
-				value={value}
-				onChange={onFieldChange}
-			/>
-			<button type="button" className="search__toggle-btn" onClick={showField}>
-				<img src={searchIcon} alt="search icon" />
-			</button>
+			<div className="search__form-control">
+				<input
+					type="text"
+					className="search__field"
+					placeholder="Поиск"
+					value={value}
+					onChange={onFieldChange}
+				/>
+				<button type="button" className="search__toggle-btn" onClick={showField}>
+					<img src={searchIcon} alt="search icon" />
+				</button>
+			</div>
 		</form>
 	)
 }

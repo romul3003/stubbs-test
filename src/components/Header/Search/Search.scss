@@ -3,29 +3,37 @@
 	flex: 1 1 100%;
 	margin: 0 13px 0 16px;
 	z-index: 3;
-	transition: all .2s;
 
 	@media (min-width: 1200px) {
-		//flex: 1 1 auto;
-		position: absolute;
-		top: calc(100% - 11px);
-		transform: translateY(-100%);
-		right: 0;
-		margin: 0;
+		flex: 1 1 auto;
+		width: 52px;
+		height: 30px;
+		margin: 0 13px 0 0;
 	}
 
 	&.visible {
-		@media (min-width: 1200px) {
-			//position: absolute;
-			transform: translateY(0);
-			top: 100%;
-			right: 0;
+		.search__form-control {
+			@media (min-width: 1200px) {
+				top: calc(100% + 11px);
+				width: 308px;
+			}
 		}
 
 		.search__field {
 			pointer-events: auto;
 			width: 100%;
 			opacity: 1;
+		}
+	}
+
+	&__form-control {
+		position: relative;
+		transition: width .4s ease-in, top .4s ease-in;
+		@media (min-width: 1200px) {
+			position: absolute;
+			top: -10px;
+			right: 0;
+			width: 52px;
 		}
 	}
 
@@ -45,6 +53,15 @@
 		&::placeholder {
 			color: #C4C4C4;
 		}
+
+		@media (min-width: 1200px) {
+			border: none;
+			padding: 10px 40px 10px 31px;
+			font-size: 16px;
+			line-height: 21px;
+			background-color: #F1F1F1;
+			color: #3E3E3E;
+		}
 	}
 
 	&__toggle-btn {
@@ -63,6 +80,10 @@
 			@media (hover: hover) and (pointer: fine) {
 				cursor: pointer;
 			}
+		}
+
+		@media (min-width: 1200px) {
+			padding: 0 17px;
 		}
 	}
 }

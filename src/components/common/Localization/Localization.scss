@@ -2,8 +2,41 @@
 	display: flex;
 	margin: 0 -10px;
 
+	@media (min-width: 1200px) {
+		position: relative;
+		display: block;
+		transform: translate(0, 93px);
+		padding-right: 17px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			right: 0;
+			width: 14px;
+			height: 8px;
+			background-image: url('../../../assets/img/icons/arrow-bottom-yellow.svg');
+		}
+	}
+
 	&__item {
 		padding: 0 10px;
+		background-color: rgba(62, 62, 62, 0.5);
+
+		@media (min-width: 1200px) {
+			&:nth-child(1) {
+				padding-top: 15px;
+				padding-bottom: 21px;
+				background-color: #fff;
+			}
+			&:nth-child(2) {
+				padding-top: 10px;
+				padding-bottom: 15px;
+			}
+			&:nth-child(3) {
+				padding-bottom: 15px;
+			}
+		}
 	}
 
 	&__btn {
