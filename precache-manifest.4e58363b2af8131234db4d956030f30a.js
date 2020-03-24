@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14d3ba9c97927261dc4af7fd7fcc355c",
+    "revision": "f870c285cfc870954e8545aba9e41cee",
     "url": "/stubbs-test/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stubbs-test/static/css/2.4525321e.chunk.css"
   },
   {
-    "revision": "ee21ac6785575b731863",
-    "url": "/stubbs-test/static/css/main.98c8de8f.chunk.css"
+    "revision": "53b39f9a590a229741ff",
+    "url": "/stubbs-test/static/css/main.01240b78.chunk.css"
   },
   {
     "revision": "1ac73067544a97286e18",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stubbs-test/static/js/2.8243296f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee21ac6785575b731863",
-    "url": "/stubbs-test/static/js/main.e9ca1d60.chunk.js"
+    "revision": "53b39f9a590a229741ff",
+    "url": "/stubbs-test/static/js/main.fb6cbc28.chunk.js"
   },
   {
     "revision": "76317bdc830ed63df542",
@@ -124,8 +124,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stubbs-test/static/media/flag-ru.4c7f251e.svg"
   },
   {
-    "revision": "c78c3af6add312940cc3f96004c797c7",
-    "url": "/stubbs-test/static/media/flag-ukr.c78c3af6.svg"
+    "revision": "89f42a0d7cb609e9490fbd53b91de172",
+    "url": "/stubbs-test/static/media/flag-ukr.89f42a0d.svg"
   },
   {
     "revision": "56c631264fa5833da261a894ee21622a",

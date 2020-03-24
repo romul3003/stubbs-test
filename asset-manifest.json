@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/stubbs-test/static/css/main.98c8de8f.chunk.css",
-    "main.js": "/stubbs-test/static/js/main.e9ca1d60.chunk.js",
-    "main.js.map": "/stubbs-test/static/js/main.e9ca1d60.chunk.js.map",
+    "main.css": "/stubbs-test/static/css/main.01240b78.chunk.css",
+    "main.js": "/stubbs-test/static/js/main.fb6cbc28.chunk.js",
+    "main.js.map": "/stubbs-test/static/js/main.fb6cbc28.chunk.js.map",
     "runtime-main.js": "/stubbs-test/static/js/runtime-main.8ecfbd1c.js",
     "runtime-main.js.map": "/stubbs-test/static/js/runtime-main.8ecfbd1c.js.map",
     "static/css/2.4525321e.chunk.css": "/stubbs-test/static/css/2.4525321e.chunk.css",
     "static/js/2.8243296f.chunk.js": "/stubbs-test/static/js/2.8243296f.chunk.js",
     "static/js/2.8243296f.chunk.js.map": "/stubbs-test/static/js/2.8243296f.chunk.js.map",
     "index.html": "/stubbs-test/index.html",
-    "precache-manifest.1857e3b0322582f713f31468ebf88da2.js": "/stubbs-test/precache-manifest.1857e3b0322582f713f31468ebf88da2.js",
+    "precache-manifest.4e58363b2af8131234db4d956030f30a.js": "/stubbs-test/precache-manifest.4e58363b2af8131234db4d956030f30a.js",
     "service-worker.js": "/stubbs-test/service-worker.js",
     "static/css/2.4525321e.chunk.css.map": "/stubbs-test/static/css/2.4525321e.chunk.css.map",
-    "static/css/main.98c8de8f.chunk.css.map": "/stubbs-test/static/css/main.98c8de8f.chunk.css.map",
+    "static/css/main.01240b78.chunk.css.map": "/stubbs-test/static/css/main.01240b78.chunk.css.map",
     "static/js/2.8243296f.chunk.js.LICENSE.txt": "/stubbs-test/static/js/2.8243296f.chunk.js.LICENSE.txt",
     "static/media/OurCompany.scss": "/stubbs-test/static/media/2-360-min.89e75291.png",
     "static/media/index.scss": "/stubbs-test/static/media/Roboto-Regular.c007055b.woff",
+    "static/media/Localization.scss": "/stubbs-test/static/media/arrow-bottom-yellow.45680706.svg",
     "static/media/Navigation.scss": "/stubbs-test/static/media/arrow-bottom.c925b815.svg",
     "static/media/fb.svg": "/stubbs-test/static/media/fb.c1e41a41.svg",
     "static/media/flag-ru.svg": "/stubbs-test/static/media/flag-ru.4c7f251e.svg",
-    "static/media/flag-ukr.svg": "/stubbs-test/static/media/flag-ukr.c78c3af6.svg",
+    "static/media/flag-ukr.svg": "/stubbs-test/static/media/flag-ukr.89f42a0d.svg",
     "static/media/gallery-img1-360-min.png": "/stubbs-test/static/media/gallery-img1-360-min.56c63126.png",
     "static/media/gallery-img1-360@2x-min.png": "/stubbs-test/static/media/gallery-img1-360@2x-min.0998151e.png",
     "static/media/gallery-img1-360@3x-min.png": "/stubbs-test/static/media/gallery-img1-360@3x-min.099ae3c8.png",
@@ -82,7 +83,7 @@
     "static/js/runtime-main.8ecfbd1c.js",
     "static/css/2.4525321e.chunk.css",
     "static/js/2.8243296f.chunk.js",
-    "static/css/main.98c8de8f.chunk.css",
-    "static/js/main.e9ca1d60.chunk.js"
+    "static/css/main.01240b78.chunk.css",
+    "static/js/main.fb6cbc28.chunk.js"
   ]
 }
