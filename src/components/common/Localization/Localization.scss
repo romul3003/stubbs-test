@@ -77,5 +77,11 @@
 		background-image: url('../../../assets/img/icons/arrow-bottom-yellow.svg');
 		background-repeat: no-repeat;
 		background-position: center;
+
+		&:hover {
+			@media (hover: hover) and (pointer: fine) {
+				cursor: pointer;
+			}
+		}
 	}
 }
