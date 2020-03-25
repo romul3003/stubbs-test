@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stubbs-test/static/css/main.8df5ac96.chunk.css",
+    "main.css": "/stubbs-test/static/css/main.334b746b.chunk.css",
     "main.js": "/stubbs-test/static/js/main.8d21a779.chunk.js",
     "main.js.map": "/stubbs-test/static/js/main.8d21a779.chunk.js.map",
     "runtime-main.js": "/stubbs-test/static/js/runtime-main.8ecfbd1c.js",
@@ -9,10 +9,10 @@
     "static/js/2.ad74f4a3.chunk.js": "/stubbs-test/static/js/2.ad74f4a3.chunk.js",
     "static/js/2.ad74f4a3.chunk.js.map": "/stubbs-test/static/js/2.ad74f4a3.chunk.js.map",
     "index.html": "/stubbs-test/index.html",
-    "precache-manifest.e748db5e7077fc3d8edc186cd121f504.js": "/stubbs-test/precache-manifest.e748db5e7077fc3d8edc186cd121f504.js",
+    "precache-manifest.19691f27caa174ff57dcaf22b0bc0d88.js": "/stubbs-test/precache-manifest.19691f27caa174ff57dcaf22b0bc0d88.js",
     "service-worker.js": "/stubbs-test/service-worker.js",
     "static/css/2.4525321e.chunk.css.map": "/stubbs-test/static/css/2.4525321e.chunk.css.map",
-    "static/css/main.8df5ac96.chunk.css.map": "/stubbs-test/static/css/main.8df5ac96.chunk.css.map",
+    "static/css/main.334b746b.chunk.css.map": "/stubbs-test/static/css/main.334b746b.chunk.css.map",
     "static/js/2.ad74f4a3.chunk.js.LICENSE.txt": "/stubbs-test/static/js/2.ad74f4a3.chunk.js.LICENSE.txt",
     "static/media/OurCompany.scss": "/stubbs-test/static/media/2-360-min.89e75291.png",
     "static/media/index.scss": "/stubbs-test/static/media/Roboto-Regular.c007055b.woff",
@@ -83,7 +83,7 @@
     "static/js/runtime-main.8ecfbd1c.js",
     "static/css/2.4525321e.chunk.css",
     "static/js/2.ad74f4a3.chunk.js",
-    "static/css/main.8df5ac96.chunk.css",
+    "static/css/main.334b746b.chunk.css",
     "static/js/main.8d21a779.chunk.js"
   ]
 }
