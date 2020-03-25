@@ -11,6 +11,9 @@ export const useMediaSize = () => {
 		const mql = window.matchMedia('(min-width: 1200px)')
 		finIsMediaeSizeMobile(mql)
 		mql.addListener(finIsMediaeSizeMobile)
+		return () => {
+			mql.removeListener(finIsMediaeSizeMobile)
+		}
 	}, [isMobile])
 
 	return isMobile
