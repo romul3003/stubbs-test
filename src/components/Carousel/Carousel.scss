@@ -97,6 +97,10 @@
 		margin: 0;
 		padding: 0 16px;
 
+		@media (min-width: 120px) {
+			bottom: 15px;
+		}
+
 		li {
 			padding: 0 5px;
 			vertical-align: top;
