@@ -42,7 +42,7 @@ p {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -53,6 +53,11 @@ p {
   color: #3E3E3E;
   letter-spacing: -0.2px;
 
+  @media (min-width: 1360px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -62,5 +67,10 @@ p {
     width: 60px;
     height: 2px;
     background-color: #E4B56B;
+
+    @media (min-width: 1360px) {
+      width: 82px;
+      bottom: -10px;
+    }
   }
 }

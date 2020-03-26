@@ -3,10 +3,19 @@
 	flex-wrap: wrap;
 	margin: 0 -5px;
 
+	@media (min-width: 1360px) {
+		flex: 1 1 33.33%;
+		margin: 0 -5px;
+	}
+
 	&__item {
 		position: relative;
 		flex: 1 1 50%;
 		padding: 5px;
+
+		@media (min-width: 1360px) {
+			flex: 1 1 33.33%;
+		}
 	}
 
 	&__item-wrap {
@@ -25,6 +34,7 @@
 		display: flex;
 		align-items: center;
 		width: 95%;
+		max-width: 333px;
 		min-height: 36px;
 		padding: 0 15px 0 6px;
 		background-color: rgba(62, 62, 62, 0.9);
@@ -34,7 +44,23 @@
 		letter-spacing: .25px;
 
 		@media (min-width: 360px) {
+			min-height: 45px;
 			font-size: 12px;
+		}
+
+		@media (min-width: 576px) {
+			font-size: 16px;
+		}
+
+		@media (min-width: 768px) {
+			top: 30px;
+		}
+
+		@media (min-width: 1200px) {
+			min-height: 56px;
+			padding: 0 25px 0 15px;
+			font-size: 20px;
+			line-height: 60px;
 		}
 
 		&::after {
@@ -45,6 +71,11 @@
 			width: 2px;
 			height: 23px;
 			background-color: #E4B56B;
+
+			@media (min-width: 1200px) {
+				right: 4.2%;
+				height: 48px;
+			}
 		}
 	}
 
