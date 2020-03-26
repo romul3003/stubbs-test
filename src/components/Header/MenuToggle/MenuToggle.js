@@ -1,5 +1,6 @@
 import React from 'react'
 import './MenuToggle.scss'
+import classNames from 'classnames'
 
 const MenuToggle = ({ menuIsActive, setMenu }) => {
 	const toggleButton = () => {
@@ -9,7 +10,7 @@ const MenuToggle = ({ menuIsActive, setMenu }) => {
 	return (
 		<button
 			type="button"
-			className={`menu-toggle-btn ${menuIsActive ? 'change' : ''} `.trim()}
+			className={classNames('menu-toggle-btn', { change: menuIsActive })}
 			onClick={toggleButton}
 		>
 			<span className="menu-toggle__wrap">

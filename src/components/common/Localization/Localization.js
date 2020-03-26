@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Localization.scss'
 import { languagesList } from '../../../mockData/mockData'
+import classNames from 'classnames'
 
 const Localization = () => {
 	const [isVisible, setVisible] = useState(false)
@@ -29,7 +30,7 @@ const Localization = () => {
 	const renderLanguages = () =>
 		languages.map(lang => (
 			<div
-				className={`localization__item ${lang.active ? 'active' : ''}`.trim()}
+				className={classNames('localization__item', { active: lang.active })}
 				key={lang.id}
 			>
 				<button
@@ -43,7 +44,7 @@ const Localization = () => {
 		))
 
 	return (
-		<div className={`localization ${!isVisible ? '' : 'visible'}`.trim()}>
+		<div className={classNames('localization', { visible: isVisible })}>
 			{renderLanguages()}
 		</div>
 	)

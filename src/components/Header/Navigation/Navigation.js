@@ -3,12 +3,13 @@ import './Navigation.scss'
 import Localization from '../../common/Localization/Localization'
 import { NavLink } from 'react-router-dom'
 import { useMediaSize } from '../../../hooks/useMediaSize'
+import classNames from 'classnames'
 
 const Navigation = ({ menuIsActive }) => {
 	const isMobile = useMediaSize()
 
 	return (
-		<nav className={`nav ${menuIsActive ? 'active' : ''}`.trim()}>
+		<nav className={classNames('nav', { active: menuIsActive })}>
 			<ul className="nav__menu">
 				<li className="nav__menu-item">
 					<NavLink to="/" className="nav__menu-link" exact>

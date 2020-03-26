@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Search.scss'
 import searchIcon from '../../../assets/img/icons/search.svg'
+import classNames from 'classnames'
 
 const Search = () => {
 	const [value, setValue] = useState('')
@@ -24,7 +25,7 @@ const Search = () => {
 
 	return (
 		<form
-			className={`search ${fieldVisibility ? 'visible' : ''}`.trim()}
+			className={classNames('search', { visible: fieldVisibility })}
 			onSubmit={submitHandler}
 		>
 			<div className="search__form-control">
