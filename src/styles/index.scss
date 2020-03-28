@@ -50,10 +50,20 @@ p {
   position: relative;
   text-align: center;
   font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
   color: #3E3E3E;
   letter-spacing: -0.2px;
+  @media (min-width: 576px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-  @media (min-width: 1360px) {
+  @media (min-width: 1200px) {
     font-size: 40px;
     line-height: 60px;
   }
@@ -68,7 +78,7 @@ p {
     height: 2px;
     background-color: #E4B56B;
 
-    @media (min-width: 1360px) {
+    @media (min-width: 1200px) {
       width: 82px;
       bottom: -10px;
     }

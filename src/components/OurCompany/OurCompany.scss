@@ -4,6 +4,13 @@
 	&__title {
 		margin-bottom: 26px;
 		padding: 0 16px;
+		@media (min-width:1200px) {
+			margin-top: 27px;
+		}
+
+		&::after {
+			bottom: 0;
+		}
 	}
 
 	&__reasons {
@@ -20,29 +27,60 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+
+	@media (min-width: 576px) {
+		height: 360px;
+	}
+
+	@media (min-width: 768px) {
+		height: 380px;
+	}
+
+
 	&:nth-child(1) {
 		background-image: url('../../assets/img/our-company/1-360-min.png');
+		@media (min-width: 768px) {
+			background-image: url('../../assets/img/our-company/1-min.png');
+		}
 	}
 	&:nth-child(2) {
 		background-image: url('../../assets/img/our-company/2-360-min.png');
+		@media (min-width: 768px) {
+			background-image: url('../../assets/img/our-company/2-min.png');
+		}
 	}
 	&:nth-child(odd) {
 		.reason__text-layer {
 			margin-right: auto;
-			padding-right: 44px;
-			padding-left: 16px;
+			padding-left: 1.34em;
+			padding-right: 3.7em;
+			@media (min-width: 992px) {
+				padding-left: 5em;
+				padding-right: 6.38em;
+			}
 			&::after {
 				right: 6%;
+				@media (min-width:1200px) {
+					right: 61px;
+				}
 			}
 		}
 	}
 	&:nth-child(even) {
 		.reason__text-layer {
 			margin-left: auto;
-			padding-right: 16px;
-			padding-left: 65px;
+			padding-left: 5.42em;
+			padding-right: 1.35em;
+			@media (min-width: 992px) {
+				padding-left: 6.38em;
+				padding-right: 5em;
+			}
+
 			&::after {
 				left: 6%;
+				@media (min-width:1200px) {
+					left: 78px;
+				}
 			}
 		}
 	}
@@ -53,12 +91,34 @@
 	&__text-layer {
 		position: relative;
 		max-width: 326px;
-		height: 180px;
-		padding-top: 15px;
-		padding-bottom: 15px;
+		min-height: 180px;
+		padding-top: 1.17em;
+		padding-bottom: 1.17em;
 		overflow: auto;
 		background-color: rgba(62, 62, 62, 0.9);
 		color: #fff;
+		font-size: 12px;
+		line-height: 16px;
+		@media (min-width: 576px) {
+			max-width: 350px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		@media (min-width: 768px) {
+			max-width: none;
+			width: 55.14%;
+		}
+		@media (min-width: 992px) {
+			padding-top: 2.22em;
+			padding-bottom: 2.22em;
+			font-size: 18px;
+			line-height: 23px;
+		}
+		@media (min-width: 1200px) {
+			width: 750px;
+			height: auto;
+			min-height: 260px;
+		}
 		&::after {
 			content: '';
 			position: absolute;
@@ -66,6 +126,9 @@
 			width: 2px;
 			height: 100px;
 			background-color: #E4B56B;
+			@media (min-width: 1200px) {
+				height: 212px;
+			}
 		}
 	}
 
@@ -73,11 +136,24 @@
 		margin: 0 0 14px;
 		font-weight: 500;
 		letter-spacing: 0.2px;
+		color: #fff;
+		font-size: 20px;
+		line-height: 23px;
+		@media (min-width: 576px) {
+			font-size: 24px;
+			line-height: 36px;
+		}
+		@media (min-width: 768px) {
+			font-size: 30px;
+			line-height: 45px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 40px;
+			line-height: 60px;
+		}
 	}
 
 	&__text {
-		font-size: 12px;
-		line-height: 16px;
 		letter-spacing: 0;
 	}
 }
